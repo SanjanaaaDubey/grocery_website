@@ -1,0 +1,2 @@
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[4965,62658],{808505:(r,_,e)=>{"use strict";e.r(_),e.d(_,{default:()=>s});var n=e(806476),t=e.n(n);function s({children:r}){return r(t())}},806476:(r,_,e)=>{var n={locale:"en-IN",i18nStrings:void 0,plural:e(667463)};r.exports=n},667463:r=>{r.exports=function(r){return 1!=+r}}}]);
+//# sourceMappingURL=https://sm.pinimg.com/webapp/locale-en_IN-LocaleDataLoaderInlined-6f6bab68c73b1e55.mjs.map

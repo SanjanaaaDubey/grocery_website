@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Checkout Page Layout */
+  .checkout-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px; /* Increase max-width if needed */
+    margin: 0 auto; /* Center container */
+  }
+  
+  /* User Details */
+  .user-details, .cart-summary {
+    width: 40%; /* Adjust width if needed */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details {
+    border-right: 2px solid #ffa500; /* Orange color for border */
+    margin-right: 20px;
+  }
+  
+  .cart-summary {
+    border: 4px solid #ddd; /* Added border */
+  }
+  
+  /* Checkout Content */
+  .checkout-content {
+    width: 80%; /* Adjust width if needed */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Another Address Button */
+  .anotheraddress {
+    margin-top: 10px;
+    display: block;
+    color: #ffa500; /* Orange color */
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ffa500;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .anotheraddress:hover {
+    background-color: #ffa500;
+    color: #fff;
+  }
+  
+  /* New Account Form */
+  .new-account-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .new-account-form.show {
+    display: block;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+  }
+  
+  /* New Address Form Styles */
+  .new-account-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .new-account-form input[type="text"],
+  .new-account-form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .new-account-form input[type="text"]:focus,
+  .new-account-form input[type="email"]:focus {
+    border-color: #ffa500; /* Orange color */
+    outline: none;
+  }
+  
+  .new-account-form button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #ffa500; /* Orange color */
+    color: #fff; /* White color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-account-form button:hover {
+    background-color: #e59400; /* Darker orange on hover */
+  }
+  
+  .validation-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Cart Summary */
+  .cart-summary{
+    margin: auto;
+  }
+  .cart-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-summary h2, .cart-summary h3, .cart-summary h4 {
+    color: #ffa500; /* Orange color */
+    margin: 0 0 10px 0;
+  }
+  
+  .cart-summary .item-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-summary .item-price p {
+    margin: auto;
+    
+  }
+  
+  .summary-details p {
+    margin: 5px 0;
+  }
+  
+  /* Pay Now Form */
+  .card-form {
+    background-color: #f38c0e;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .card-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Darker text color */
+  }
+  
+  .card-form input[type="text"],
+  .card-form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .card-form input[type="text"]:focus,
+  .card-form input[type="email"]:focus {
+    border-color: #ffa500; /* Orange color */
+    outline: none;
+  }
+  
+  .card-form button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #ffa500; /* Orange color */
+    color: #fff; /* White color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-form button:hover {
+    background-color: #e59400; /* Darker orange on hover */
+  }
+  
+  .card-form .payment-info {
+    margin-top: 10px;
+    color: #666; /* Subtle text color for additional information */
+  }
+  
+  .card-form input[type="text"],
+  .card-form input[type="email"] {
+    margin-bottom: 10px;
+  }
+  
+  .place-order-button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #ffa500; /* Orange color */
+    color: #fff; /* White color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  /* Payment Form */
+  /* Payment Form */
+  .payment-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Input fields within Payment Form */
+  .payment-form input[type="text"],
+  .payment-form input[type="email"],
+  .payment-form input[type="number"],
+  .payment-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .payment-form input[type="text"]:focus,
+  .payment-form input[type="email"]:focus,
+  .payment-form input[type="number"]:focus,
+  .payment-form input[type="password"]:focus {
+    border-color: #ffa500; /* Orange color */
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .payment-form button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #ffa500; /* Orange color */
+    color: #fff; /* White color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .payment-form button:hover {
+    background-color: #e59400; /* Darker orange on hover */
+  }
+  
+  
+  .payment-form.show {
+    display: block;
+  }
+  
+  /* User Details Form */
+  .user-details-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  .payment-method {
+    margin-top: 20px;
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+ 

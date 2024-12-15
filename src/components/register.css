@@ -1,0 +1,35 @@
+.register-container{
+    margin-top: 4%;
+    height: 580px;
+    width:40%;
+    display: block;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 10px;
+}
+.register-container h1{
+    margin-top: 8px;
+}
+.email{
+    margin-left: 30%;
+    display: block;
+    width:40%;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    padding: 5px;
+}
+.register-button{
+    color: white;
+    background-color: orange;
+    border-radius: 7px;
+    padding: 5px;
+    gap:18px;
+    margin-top: 12px;
+    width:23%;
+}

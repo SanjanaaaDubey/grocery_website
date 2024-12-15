@@ -1,0 +1,261 @@
+.admin-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    transition: width 0.3s;
+    overflow: hidden;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar h2 {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #575757;
+  }
+  
+  .sidebar ul li ul {
+    list-style-type: none;
+    padding-left: 20px;
+    display: none;
+  }
+  
+  .sidebar ul li ul li {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+  
+  .sidebar ul li ul li:hover {
+    background-color: #575757;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-button.collapsed {
+    transform: rotate(180deg);
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+    transition: margin-left 0.3s;
+  }
+  
+  .content.collapsed {
+    margin-left: 60px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Add space between columns */
+  th, td {
+    padding: 12px 20px; /* Adds space inside each cell */
+  }
+  
+  thead th {
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+  }
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(25% - 20px); /* Adjust based on how many cards you want per row */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .product-card button.delete {
+    background-color: #dc3545;
+  }
+  
+  .product-card button.delete:hover {
+    background-color: #c82333;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .modal-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal-content .cancel-button {
+    background-color: #ccc;
+  }
+  
+  .modal-content .cancel-button:hover {
+    background-color: #999;
+  }
+  /* adminpage.css */
+.admin-page h1 {
+  font-family: 'Comic Sans MS', sans-serif; /* Use a stylish font */
+  font-weight: 600; /* Bold weight for emphasis */
+  font-size: 2.5rem; /* Large size for prominence */
+  color: #2C3E50; /* Dark shade for elegance */
+  text-align: center; /* Center the text */
+  font-size: 200%;
+  margin-top: 20px;
+  /*font-style: italic;*/
+  margin-bottom: 20px; /* Space below the heading */
+  /*letter-spacing: 1.5px; /* Slightly spaced letters for a modern look */
+  text-transform: uppercase; /* Transform text to uppercase for a strong presence */
+}
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100px;
+    }
+  
+    .sidebar.collapsed {
+      width: 40px;
+    }
+  
+    .content {
+      padding-left: 60px;
+    }
+  }
+  

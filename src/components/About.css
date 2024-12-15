@@ -1,0 +1,78 @@
+/* about.css */
+.abouts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  color: #333; /* Default text color */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.abouts-container h1, 
+.abouts-container h2 {
+  color: #ff6600; /* Orange heading color */
+  text-align: center;
+}
+
+/* Paragraphs */
+.abouts-container p {
+  color: #555; /* Softer text color for readability */
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Unordered list */
+.abouts-container ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.abouts-container ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.abouts-container ul li strong {
+  color: #ff6600; /* Orange for strong text */
+}
+
+/* Ordered list */
+.abouts-container ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.abouts-container ol li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Links */
+.abouts-container a {
+  color: #ff6600; /* Orange links */
+  text-decoration: none;
+}
+
+.abouts-container a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons (optional if you have any) */
+.abouts-container button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.abouts-container button:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+}

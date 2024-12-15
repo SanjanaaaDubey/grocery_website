@@ -1,0 +1,31 @@
+/* viewyourorder.css */
+
+.order-history-page {
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 25%;
+  }
+  .order-history-page h2{
+    text-align: center;
+    margin-left: 45%;
+    color: black;
+    margin-top: -50px;
+  }
+  
+  .order-item {
+    display: flex;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 20px;
+    justify-content: space-between;
+    width: 97%; /* Adjust width as needed */
+    border: 2px solid #ddd;
+    padding: 12px;
+   margin: 20px 0; /* Space between order items */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  
+  

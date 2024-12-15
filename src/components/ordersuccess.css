@@ -1,0 +1,44 @@
+.success-button{
+    background-color: orange;
+    padding: 10px;
+    justify-content: space-between;
+    gap:20%;
+}
+.order-success-buttons{
+    justify-content: space-between;
+
+}
+.order-success-buttons div{
+    justify-content: space-between;
+}
+.order-success-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .order-success-buttons {
+    margin-top: 20px;
+  }
+  
+  .success-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color:rgb(199, 117, 49);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .success-button:hover {
+    background-color: orange;
+  }
+  .receipt {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  

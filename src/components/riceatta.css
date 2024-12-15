@@ -1,0 +1,61 @@
+.riceatta-container{
+    display: flex;
+    gap:50px;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 28px;
+}
+.riceatta-section{
+    /*flex: 1 1 calc(20% - 20px);*/
+    width: 20%;
+    border-radius: 15px;
+    margin-top: 3%;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0, 0, 0.1);
+    flex-direction: column;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.riceatta-products{
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    height: auto;
+    max-width: 200px;
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+    align-items: center;
+    padding-bottom: 18px;
+    margin-bottom: 20%;
+
+}
+.riceatta-info{
+    text-align: center;
+    margin-top: 0;
+
+}
+.riceatta-info h3{
+    font-size: 18px;
+    color:#333;
+    margin: 15px 0;
+}
+.riceatta-info p{
+    font-size: 18px;
+    color: #333;
+    padding: 10%; 
+
+}
+.notification {
+    background-color: #c09358;
+    background-color: #e9b775;
+    padding: 13px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    position: absolute;
+    top: 14%;
+    z-index: 10;
+}
